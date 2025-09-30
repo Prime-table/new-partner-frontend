@@ -1,0 +1,446 @@
+.profile-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  font-family: "Neue Montreal", sans-serif;
+}
+
+.profile-headline {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 0.7rem;
+  text-align: left;
+  float: left;
+}
+
+
+/* Container */
+.profile-container {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 900px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Taller inputs for name/address */
+.tall-input {
+  height: 2rem;
+}
+
+/* Labels and Inputs */
+.profile-container label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #222;
+}
+
+.profile-container input,
+.profile-container select,
+.profile-container textarea {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+}
+
+/* Hours + Upload Row */
+.hours-upload-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+/* Hours Section */
+.hours-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.hours-headline {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #222;
+  margin-bottom: 3.5rem;
+}
+
+.hours-select {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+/* Upload Container */
+.photo-upload {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-top: 2rem;
+}
+
+.photo-upload .upload-container {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #ccc;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  gap: 0.5rem;
+}
+
+.choose-file {
+  width: 120px;
+  border: 2px solid #ccc;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin-top: 3rem;
+  text-align: center;
+  position: relative;
+}
+
+.choose-file input[type="file"] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.drag-drop-preview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.drag-drop-preview p {
+  margin-left: 1rem;
+}
+
+.image-preview-label {
+  margin-bottom: 3rem;
+  margin-right: 3rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+.preview-img {
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 0.25rem;
+}
+
+/* Second Upload */
+.photo-upload-small {
+  width: 50%;
+}
+
+.photo-upload-small .upload-container {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #ccc;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+.restaurant {
+    margin-bottom: 1rem;
+}
+/* Premium & Price */
+.premium-price-row {
+  display: flex;
+  gap: 18rem;
+  align-items: flex-start;
+}
+
+/* Save Button */
+.btn-save {
+  align-self: flex-end;
+  background-color: #e32d33;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  border-radius: 0.3rem;
+  font-weight: 600;
+  height: 55;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-save:hover {
+  background-color: #d12a2f;
+}
+
+.profile-edit {
+  margin: 3rem;
+  padding-left: 24rem;
+  padding-right: 24rem;
+}
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-header h3 {
+  font-weight: 400;
+}
+.edit-button {
+  background-color: #e32d33;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  border-radius: 0.3rem;
+  font-weight: 600;
+  height: 50;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+ .edit-button:hover {
+  background-color: #d12a2f;
+ }
+
+ .profile-section {
+  width: 100%;
+  border: 1px solid #28292c36;
+  border-radius: 0.5rem;
+ }
+
+ .profile-indicator {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  margin-left: 1.5rem;
+ }
+
+ .circular-object {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #e95d5d;
+ }
+
+ .big-taste {
+  font-size: medium;
+  font-weight: 400;
+  padding-top: 0.5rem;
+ }
+ .reservation-container {
+  display: flex;
+  gap: 0.8rem;
+  margin-left: 1.9rem;
+  margin-right: 1.9rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+ }
+
+ .reservation-container div {
+  width: 100%;
+  border: 1px solid #28292c36;
+  border-radius: 0.5rem;
+ }
+
+ .reservation-container div p {
+  font-size: medium;
+  font-weight: 300;
+  padding-left: 0.8rem;
+ }
+
+ .address-container {
+  display: flex;
+  gap: 0.8rem;
+  margin-left: 1.9rem;
+  margin-right: 1.9rem;
+  margin-bottom: 1.5rem;
+ }
+
+ .address-container div {
+  width: 100%;
+  border: 1px solid #28292c36;
+  border-radius: 0.5rem;
+ }
+
+ .address-container div h5 {
+  font-size: medium;
+  padding-left: 0.8rem;
+ }
+
+ .address-container div p {
+  font-size: medium;
+  font-weight: 300;
+  padding-left: 0.8rem;
+ }
+
+ .description-container {
+  display: flex;
+  gap: 0.8rem;
+  margin-left: 1.9rem;
+  margin-right: 1.9rem;
+  margin-bottom: 1.5rem;
+ }
+
+ .description-container div {
+  width: 100%;
+  border-radius: 0.5rem;
+ }
+
+ .description {
+  border: 1px solid #28292c36;
+ }
+
+ .description h5 {
+  font-size: medium;
+  padding-left: 0.8rem;
+ }
+
+ .description p {
+  font-size: medium;
+  font-weight: 300;
+  padding-left: 0.8rem;
+ }
+
+ .premium-container {
+  display: flex;
+  gap: 0.8rem;
+ }
+
+ .premium-container div {
+  border: 1px solid #28292c36;
+ }
+
+ .premium-container h5 {
+  font-size: medium;
+  padding-left: 0.8rem;
+ }
+
+ .premium-container p {
+  font-size: medium;
+  font-weight: 300;
+  padding-left: 0.8rem;
+ }
+
+.image-container {
+  display: flex;
+  gap: 0.8rem;
+  margin-left: 1.9rem;
+  margin-right: 1.9rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap; /* allows images to stack on small screens */
+}
+
+.image-container div {
+  flex: 1; /* allow each image to grow/shrink */
+  min-width: 200px; /* prevent them from getting too tiny */
+  height: 202px;
+  border-radius: 1.5rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.first-image {
+  background-image: url('../../../../public/images/Bacon Burgers@2x.png');
+}
+
+.second-image {
+  background-image: url('../../../../public/images/Bacon Burgers@2x (1).png');
+}
+
+.third-image {
+  background-image: url('../../../../public/images/Frame 177.png');
+}
+
+
+@media (max-width: 1024px) {
+  .premium-price-row {
+    gap: 2rem;
+  }
+  .profile-edit {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hours-upload-row {
+    flex-direction: column;
+  }
+  .photo-upload, 
+  .photo-upload-small {
+    width: 100%;
+  }
+  .premium-price-row {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .profile-edit {
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .image-container {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-container {
+    padding: 1rem;
+  }
+  .btn-save, .edit-button {
+    width: 100%;
+    text-align: center;
+  }
+  .reservation-container,
+  .address-container,
+  .description-container {
+    margin: 1rem;
+  }
+  .first-image, .second-image, .third-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Reservation stats → 2x2 grid */
+  .reservation-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  /* Address and Hours stack vertically */
+  .address-container {
+    flex-direction: column;
+  }
+
+  /* Description and Premium stack vertically */
+  .description-container {
+    flex-direction: column;
+  }
+
+  /* Images in 2 columns instead of 3 */
+  .image-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Reservation stats → full column */
+  .reservation-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* Images → single column full width */
+  .image-container {
+    grid-template-columns: 1fr;
+  }
+}

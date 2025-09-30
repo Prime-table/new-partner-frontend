@@ -1,0 +1,254 @@
+.setting {
+  margin-top: 3rem;
+  max-width: 1240px;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.settings-page {
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+.settings-header {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.settings-tabs {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: -2px;
+  border-bottom: 1px solid #ddd;
+}
+
+.settings-tabs a { 
+  padding-bottom: 0.5rem;
+  text-decoration: none;
+  color: black; }
+
+  .settings-tabs a.active { 
+  color: red; 
+  border-bottom: 2px solid red; }
+
+.settings-tabs .tab {
+  text-decoration: none;
+  color: black;
+  padding-bottom: 0.5rem;
+}
+
+.settings-tabs .tab.active {
+  color: red;
+  border-bottom: 2px solid red;
+}
+
+.tab-line {
+  width: 100%;
+  border: 1px solid #ddd;
+  margin-bottom: 2rem;
+}
+
+.profile-header {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+/* ================= Form Styles ================= */
+.form-div {
+  width: 100%;
+  max-width: 1073px;
+  border: 1px solid rgb(230, 222, 222);
+  border-radius: 0.8rem;
+  box-sizing: border-box;
+  padding: 2rem; /* added so content doesn’t touch edges */
+}
+
+.form-container {
+  margin: 2rem 0 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem; /* space between fields */
+  max-width: 700px;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.form-row label {
+  flex: 1;
+  font-weight: 400;
+  min-width: 120px;
+}
+
+.form-row input {
+  flex: 2;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.bank {
+  margin-left: 0;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+}
+
+/* ================= Buttons ================= */
+.save-btn,
+.save-last-btn,
+.btn-save {
+  margin-top: 2rem;
+  padding: 0.8rem 1.5rem;
+  background: #e22e35;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.save-btn:hover,
+.save-last-btn:hover,
+.btn-save:hover {
+  background: darkred;
+}
+
+.save-last-btn {
+  float: right;
+  margin-top: 1rem;
+}
+
+/* ================= Communication Section ================= */
+.communication {
+  margin-top: 3rem;
+  width: 100%;
+  max-width: 1244px;
+}
+
+.comm-container {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1.5rem;
+  max-width: 549px;
+  width: 100%;
+  height: 541px;
+}
+
+.comm-section {
+  margin-bottom: 1.5rem;
+}
+
+.comm-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.8rem 0;
+}
+
+/* ================= Toggle Switch ================= */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0;
+  right: 0; bottom: 0;
+  background-color: gray;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px; width: 18px;
+  left: 3px; bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.switch input:checked + .slider {
+  background-color: red;
+}
+
+.switch input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* ================= Responsive Breakpoints ================= */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .form-div {
+    padding: 1.5rem;
+  }
+
+  .form-container {
+    max-width: 100%;
+    margin-left: 0; /* remove side gap on smaller screens */
+  }
+
+  .comm-container {
+    max-width: 100%;
+  }
+}
+
+/* Mobile landscape */
+@media (max-width: 768px) {
+  .settings-tabs {
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .form-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .form-row label {
+    min-width: auto;
+  }
+}
+
+/* Mobile portrait */
+@media (max-width: 480px) {
+  .settings-header,
+  .profile-header {
+    font-size: 1rem;
+  }
+
+  .settings-tabs {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .save-btn,
+  .save-last-btn,
+  .btn-save {
+    width: 100%;
+    text-align: center;
+    float: none; /* override float on mobile */
+  }
+}
